@@ -6,7 +6,9 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body data-ng-app="demoApp" id="#top">
-
+  <header>
+    <h1>Fair Weather Hikers</h1>
+  </header>
   <section id="pagewrap">
   <div data-ng-controller="AuthController as globalAuth" data-ng-init="globalAuth.getEmail()">
     <p data-ng-if="globalAuth.email">Hello: {{globalAuth.email}} <a href data-ng-click="globalAuth.logout()">Logout</a></p>
@@ -21,13 +23,13 @@
 	    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
 	</div>
 
-  <section id="favorite">
+ <!--  <section id="favorite">
     <h2>FAVORITE TRAILS</h2>
     <div class="trail-list" data-ng-controller="TrailsController as trailsctrl" data-ng-init="trailsctrl.getAll()">
     <default-trail-list-item data-ng-repeat="trail in trailsctrl.trails" data-trail="trail">
     <li>{{trail.trailName}} | {{trail.length}} miles | rating: {{trail.difficulty}}</li>
     </div>
-  </section>
+  </section> -->
 
   <aside id="all-trails">
     <h2>ALL TRAILS</h2>
