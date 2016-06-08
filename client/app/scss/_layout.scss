@@ -15,23 +15,22 @@
 }
 
 #all-trails {
-  clear: both;
   height: 25%;
-  width: 90%;
+  width: 30%;
   padding: 0 15px;
   float: left;
 }
 
 .map-div {
   height: 30%;
-  width: 40%;
+  width: 30%;
   float: left;
   padding: 5px 15px;
 }
 
 #favorite {
   height: 30%;
-  width: 40%;
+  width: 30%;
   float: left;
   padding: 5px 5px;
   margin: 0px 5px 5px 5px;
@@ -51,7 +50,7 @@ footer {
   }
 
   .map-div {
-    width: 41%;
+    width: 94%;
     padding: 1% 4%;
   }
 
@@ -64,7 +63,7 @@ footer {
   #all-trails {
     clear: both;
     padding: 1% 4%;
-    width: auto;
+    width: 41%;
     float: none;
   }
 
@@ -91,21 +90,60 @@ footer {
     width: auto;
     float: none;
   }
+
+  .auth-view {
+  padding: 3px 0;
+  text-align: left;
+  font-size: 1.5
+    div {
+      float: left;
+    }
+    input {
+      width: 100px;
+    }
+  }
 }
 
 /* for 480px or less */
 @media screen and (max-width: 480px) {
 
+  p {
+    font-size: 1.2em;
+  }
   .weather {
     height: auto;
    }
 
+  .map-div {
+    height: 20%;
+  }
+
   #all-trails {
     height: 20%;
+    font-size: 1em;
+  }
+
+  .auth-view {
+  padding: 3px 0;
+  text-align: left;
+    div {
+      padding: 2px;
+    }
+    input {
+      width: 100px;
+    }
+    label {
+      display: inline-block;
+    }
+  }
+
+  .sign-auth {
+    font-size: 1.2em;
   }
 }
 
 .map-div {
+  width: 92%;
   background: #f8f8f8;
 }
 
